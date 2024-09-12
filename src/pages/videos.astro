@@ -2,9 +2,11 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+
+//wallpapers-for-card
 ---
 
-<Layout title="Iglesia Casa de Vida">
+<Layout>
   <Header />
   <main
     class="flex flex-col justify-center items-center bg-white text-white gap-y-14 py-32 px-5"
@@ -16,21 +18,37 @@ import Layout from "../layouts/Layout.astro";
       target="_blank"
       href="https://www.youtube.com/"
       <div
-      class="parallax-section lg:w-[1000px] w-full h-72"
+      class="parallax-section-podcast lg:w-[1000px] w-full h-72"
     >
-      <div class="parallax-overlay h-72 flex items-center justify-center">
-        <h1 class="text-white font-bold lg:text-6xl text-3xl">Predicaciones</h1>
+      <div
+        class="parallax-overlay-podcast h-72 flex items-center justify-center"
+      >
+        <h1 class="text-white font-bold lg:text-6xl text-3xl">Podcast</h1>
       </div>
     </a>
     <a
       target="_blank"
       href="https://www.youtube.com/"
       <div
-      class="parallax-section lg:w-[1000px] w-full h-72"
+      class="parallax-section-predicas lg:w-[1000px] w-full h-72"
     >
-      <div class="parallax-overlay h-72 flex items-center justify-center">
-        <h1 class="text-white font-bold lg:text-6xl text-3xl">
-          Escuela bíblica
+      <div
+        class="parallax-overlay-predicas h-72 flex items-center justify-center"
+      >
+        <h1 class="text-white font-bold lg:text-6xl text-3xl">Predicas</h1>
+      </div>
+    </a>
+    <a
+      target="_blank"
+      href="https://www.youtube.com/"
+      <div
+      class="parallax-section-evangelismo lg:w-[1000px] w-full h-72"
+    >
+      <div
+        class="parallax-overlay-evangelismo h-72 flex items-center justify-center"
+      >
+        <h1 class="text-white font-bold lg:text-6xl text-3xl text-center">
+          Evangelismo y Misiones
         </h1>
       </div>
     </a>
@@ -38,20 +56,24 @@ import Layout from "../layouts/Layout.astro";
       target="_blank"
       href="https://www.youtube.com/"
       <div
-      class="parallax-section lg:w-[1000px] w-full h-72"
+      class="parallax-section-devocionales lg:w-[1000px] w-full h-72"
     >
-      <div class="parallax-overlay h-72 flex items-center justify-center">
-        <h1 class="text-white font-bold lg:text-6xl text-3xl">Teología</h1>
+      <div
+        class="parallax-overlay-devocionales h-72 flex items-center justify-center"
+      >
+        <h1 class="text-white font-bold lg:text-6xl text-3xl">Devocionales</h1>
       </div>
     </a>
     <a
       target="_blank"
       href="https://www.youtube.com/"
       <div
-      class="parallax-section lg:w-[1000px] w-full h-72"
+      class="parallax-section-cuentos lg:w-[1000px] w-full h-72"
     >
-      <div class="parallax-overlay h-72 flex items-center justify-center">
-        <h1 class="text-white font-bold lg:text-6xl text-3xl">Evangelismo</h1>
+      <div
+        class="parallax-overlay-cuentos h-72 flex items-center justify-center"
+      >
+        <h1 class="text-white font-bold lg:text-6xl text-3xl">Cuentos</h1>
       </div>
     </a>
   </main>
@@ -59,14 +81,58 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
-  .parallax-section {
-    background-image: url("/src/assets/dar-bg.jpg");
+  .parallax-section-podcast {
+    background-image: url("/src/assets/podcast.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-inline: 3px;
   }
-  .parallax-overlay {
+  .parallax-overlay-podcast {
+    background: rgba(0, 0, 0, 0.435);
+  }
+
+  .parallax-section-predicas {
+    background-image: url("/src/assets/predicas.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline: 3px;
+  }
+  .parallax-overlay-predicas {
+    background: rgba(0, 0, 0, 0.435);
+  }
+
+  .parallax-section-evangelismo {
+    background-image: url("/src/assets/evangelismo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline: 3px;
+  }
+  .parallax-overlay-evangelismo {
+    background: rgba(0, 0, 0, 0.435);
+  }
+
+  .parallax-section-devocionales {
+    background-image: url("/src/assets/devocionales.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline: 3px;
+  }
+  .parallax-overlay-devocionales {
+    background: rgba(0, 0, 0, 0.435);
+  }
+
+  .parallax-section-cuentos {
+    background-image: url("/src/assets/cuentos.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline: 3px;
+  }
+  .parallax-overlay-cuentos {
     background: rgba(0, 0, 0, 0.435);
   }
 </style>
