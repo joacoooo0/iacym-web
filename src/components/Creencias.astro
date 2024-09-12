@@ -13,21 +13,30 @@ import familyIcon from "../assets/familyIcon.svg";
   >
     ¿En qué creemos?
   </h1>
-  <div class="lg:flex xl:gap-x-10 gap-x-5">
-    <Card
-      imageImport={blessIcon}
-      titleCard={"Dios"}
-      descriptionCard={"Reconocemos que hay un solo Dios vivo y verdadero, que existe en tres personas: Padre, Jesucristo Hijo y Espíritu Santo, pero sin división de naturaleza, esencia o ser."}
-    />
-    <Card
-      imageImport={crossIcon}
-      titleCard={"Oración"}
-      descriptionCard={"Buscaremos intencionalmente reservar momentos específicos para la oración privada, familiar y corporativa."}
-    />
-    <Card
-      imageImport={familyIcon}
-      titleCard={"Familia"}
-      descriptionCard={"Alentamos compromisos de por vida con el matrimonio entre un hombre y una mujer y apoyamos la educación espiritual continua de la familia."}
-    />
+  <div class="flex flex-col gap-x-5 items-center justify-center">
+    <div class="lg:flex lg:gap-x-10">
+      <Card
+        imageImport={blessIcon}
+        titleCard={"La Biblia"}
+        descriptionCard={"Creemos que la Biblia es la revelación autorizada de Dios a los hombres y que está completamente sin errores, inspirada únicamente por la dirección del Espíritu Santo. Por lo tanto, las Escrituras son las únicas guías confiables en cuestiones de fe y práctica."}
+      />
+      <Card
+        imageImport={crossIcon}
+        titleCard={"Dios"}
+        descriptionCard={"Creemos en la Trinidad — Tres Personas: Padre, Hijo y Espíritu Santo. Los tres son igualmente Dios, son de una sola sustancia y no tienen principio ni fin."}
+      />
+      <Card
+        imageImport={familyIcon}
+        titleCard={"Regreso de Cristo"}
+        descriptionCard={"Creemos en el regreso personal de nuestro Señor Jesucristo antes del establecimiento de Su reino en la tierra. Los que son creyentes estarán para siempre en la presencia de Dios, y los que han rechazado a Cristo serán separados de Dios para siempre. "}
+      />
+    </div>
+    <div>
+      <a
+        href="/creencias"
+        class="bg-[#0059AD] text-white text-xl font-semibold rounded-md h-10 mt-6 p-7 flex justify-center items-center"
+        >Ver más</a
+      >
+    </div>
   </div>
 </section>
