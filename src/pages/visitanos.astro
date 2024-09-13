@@ -1,18 +1,83 @@
 ---
+import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
   <Header />
-  <main
-    class="flex flex-col justify-center items-center bg-black w-full h-full text-white"
-  >
-    <div class="">
-      <h1 class="bg-orange-800 text-5xl font-bold flex justify-center">
-        Visítanos
-      </h1>
-      <h2>is comming...</h2>
+  <main>
+    <div class="parallax-section h-screen relative">
+      <div
+        class="parallax-overlay absolute inset-0 flex flex-col items-center justify-center text-white text-center text-balance xl:px-96 px-10"
+      >
+        <h1 class="sm:text-7xl text-3xl font-extrabold">Visítanos</h1>
+        <button
+          class="mt-6 px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold"
+          >Ver mapa</button
+        >
+      </div>
+    </div>
+    <div class="flex flex-col items-center justify-center p-32">
+      <h1 class="text-5xl font-bold">Planifica tu vista</h1>
+      <div
+        class="flex flex-col items-center justify-center text-white gap-y-20"
+      >
+        <div class="flex gap-x-20">
+          <div
+            class="bg-[#0059AD] w-96 h-96 flex flex-col items-start justify-center gap-y-4 p-10 rounded-xl"
+          >
+            <h2 class="text-4xl font-bold">Servicios dominicales</h2>
+            <p>
+              Tenemos servicios a las 10:30 am; ven y disfruta de cantar al
+              Señor y de la predicación de su palabra.
+            </p>
+          </div>
+          <div
+            class="bg-[#0059AD] w-96 h-96 flex flex-col items-start justify-center gap-y-4 p-10 rounded-xl"
+          >
+            <h2 class="text-4xl font-bold">¿Traer a los niños?</h2>
+            <p>
+              Contamos con un ministerio a la niñez donde vas a poder dejar a
+              los pequeños. Ellos van a disfrutar un día inigualable, mientras
+              estas disfrutando del culto del Señor.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-x-20">
+          <div
+            class="bg-[#0059AD] w-96 h-96 flex flex-col items-start justify-center gap-y-4 p-10 rounded-xl"
+          >
+            <h2 class="text-4xl font-bold">Estacionamiento</h2>
+            <p>
+              Aparcar es fácil. A los alrededores de la iglesia vas a poder
+              encontrar mucho espacio de para dejar el coche.
+            </p>
+          </div>
+          <div
+            class="bg-[#0059AD] w-96 h-96 flex flex-col items-start justify-center gap-y-4 p-10 rounded-xl"
+          >
+            <h2 class="text-4xl font-bold">Cuando llegas</h2>
+            <p>
+              Por favor acércate a uno de los líderes, estamos ansiosos de
+              conocerte, pues hemos preparado un pequeño presente para ti.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
+  <Footer />
 </Layout>
+
+<style>
+  .parallax-section {
+    background-image: url("/src/assets/maps.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax-overlay {
+    background: rgba(0, 0, 0, 0.713);
+  }
+</style>
