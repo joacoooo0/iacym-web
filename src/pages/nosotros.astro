@@ -1,18 +1,43 @@
 ---
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import iglesiaP1 from "../assets/grupo-iglesia-1.jpg";
+import iglesiaP2 from "../assets/grupo-iglesia-2.jpg";
+import iglesiaP3 from "../assets/grupo-iglesia-3.jpg";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Iglesia Casa de Vida">
   <Header />
-  <main
-    class="flex flex-col justify-center items-center bg-black w-full h-full text-white"
-  >
-    <div class="">
-      <h1 class="bg-orange-800 text-5xl font-bold flex justify-center">
-        Nosotros
-      </h1>
-      <h2>is comming...</h2>
+  <main class="flex flex-col justify-center items-center p-32 gap-y-16">
+    <h1 class="text-[#141414] text-6xl font-bold">Nosotros</h1>
+    <div class="flex items-center justify-center gap-x-36">
+      <p class="w-[445px] font-normal text-xl">
+        Es un tiempo increíble para “Alianza Casa de Vida”. Sabemos que Dios nos
+        ha puesto en el lugar correcto y en el tiempo correcto con el propósito
+        de impactar positivamente a nuestra comunidad.
+      </p>
+      <Image src={iglesiaP1} alt="" class="w-[500px] rounded-xl" />
+    </div>
+    <div class="flex items-center justify-center gap-x-36">
+      <Image src={iglesiaP2} alt="" class="w-[500px] rounded-xl" />
+      <p class="w-[445px] font-normal text-xl">
+        Casa de Vida es un lugar donde todos son bienvenidos, es por esto que
+        queremos invitarte, junto con tu familia para que nos visiten.
+      </p>
+    </div>
+    <div class="flex items-center justify-center gap-x-36">
+      <p class="w-[445px] font-normal text-xl">
+        En nuestra Iglesia los mensajes que se predican son prácticos y
+        relevantes, te retarán y te ayudarán a encontrar el propósito y la
+        dirección para tu vida. Los programas para nuestros estudiantes y niños
+        son divertidos, y nuestros maestros están listos para ayudar y motivar a
+        tus hijos en su crecimiento espiritual como seguidores de Cristo.
+      </p>
+      <Image src={iglesiaP3} alt="" class="w-[500px] rounded-xl" />
     </div>
   </main>
+  <Footer />
 </Layout>
