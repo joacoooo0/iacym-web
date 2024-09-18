@@ -1,10 +1,18 @@
 ---
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
-import pastoresPhoto from "../assets/angelo-aida.jpg";
 import userIcon from "../assets/user-example.jpg";
 import { Image } from "astro:assets";
 import Footer from "../components/Footer.astro";
+
+//equipo-fotos
+import pastores from "../assets/pastores.jpg";
+import andrea_aridane from "../assets/andrea-aridane.jpg";
+import fabian from "../assets/fabian.jpg";
+import jenell from "../assets/jenell.jpg";
+import mishel from "../assets/mishel.jpg";
+import hans_ludy from "../assets/hans-ludy.jpg";
+import yonogy_yris from "../assets/yonogy-yris.jpg";
 ---
 
 <Layout>
@@ -18,7 +26,7 @@ import Footer from "../components/Footer.astro";
       >
         <div class="flex items-center justify-center">
           <Image
-            src={pastoresPhoto}
+            src={pastores}
             alt="user-icon"
             class="lg:w-[440px] w-[250px] rounded-2xl"
           />
@@ -59,7 +67,7 @@ import Footer from "../components/Footer.astro";
         <div
           class="lg:w-[300px] w-[200px] h-full flex flex-col items-center justify-center text-[#141414]"
         >
-          <Image src={userIcon} alt="user-icon-team" class="rounded-2xl" />
+          <Image src={fabian} alt="user-icon-team" class="rounded-2xl" />
           <h1 class="text-sm font-bold pt-3 text-center">
             Líder de Jóvenes y Adoración
           </h1>
@@ -68,16 +76,16 @@ import Footer from "../components/Footer.astro";
         <div
           class="lg:w-[300px] w-[200px] h-full flex flex-col items-center justify-center text-[#141414]"
         >
-          <Image src={userIcon} alt="user-icon-team" class="rounded-2xl" />
+          <Image src={mishel} alt="user-icon-team" class="rounded-2xl" />
           <h1 class="text-sm font-bold pt-3 text-center">
             Líder de Jóvenes y Secretaria de la iglesia
           </h1>
-          <h3>Fabian</h3>
+          <h3>Mishel</h3>
         </div>
         <div
           class="lg:w-[300px] w-[200px] h-full flex flex-col items-center justify-center text-[#141414]"
         >
-          <Image src={userIcon} alt="user-icon-team" class="rounded-2xl" />
+          <Image src={yonogy_yris} alt="user-icon-team" class="rounded-2xl" />
           <h1 class="text-sm font-bold pt-3 text-center">
             Ministerio a la niñez y Coordinación
           </h1>
@@ -86,7 +94,11 @@ import Footer from "../components/Footer.astro";
         <div
           class="lg:w-[300px] w-[200px] h-full flex flex-col items-center justify-center text-[#141414]"
         >
-          <Image src={userIcon} alt="user-icon-team" class="rounded-2xl" />
+          <Image
+            src={andrea_aridane}
+            alt="user-icon-team"
+            class="rounded-2xl"
+          />
           <h1 class="text-sm font-bold pt-3 text-center">
             Líderes de Evangelismo y Misiones
           </h1>
@@ -95,7 +107,7 @@ import Footer from "../components/Footer.astro";
         <div
           class="lg:w-[300px] w-[200px] h-full flex flex-col items-center justify-center text-[#141414]"
         >
-          <Image src={userIcon} alt="user-icon-team" class="rounded-2xl" />
+          <Image src={hans_ludy} alt="user-icon-team" class="rounded-2xl" />
           <h1 class="text-sm font-bold pt-3 text-center">
             Ancianos de la iglesia
           </h1>
@@ -104,9 +116,9 @@ import Footer from "../components/Footer.astro";
         <div
           class="lg:w-[300px] w-[200px] h-full flex flex-col items-center justify-center text-[#141414]"
         >
-          <Image src={userIcon} alt="user-icon-team" class="rounded-2xl" />
-          <h1 class="text-sm font-bold pt-3 text-center">Jenell</h1>
-          <h3>Audiovisuales</h3>
+          <Image src={jenell} alt="user-icon-team" class="rounded-2xl" />
+          <h1 class="text-sm font-bold pt-3 text-center">Audiovisuales</h1>
+          <h3>Jenell</h3>
         </div>
       </div>
     </div>
