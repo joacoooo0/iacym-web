@@ -1,18 +1,285 @@
 ---
+import { Image } from "astro:assets";
+import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+import Card from ".././utils/card.astro";
+
+//iconos-svg
+import blessIcon from "../assets/bless-svgrepo-com.svg";
+import crossIcon from "../assets/cross-svgrepo-com.svg";
+import bibleIcon from "../assets/bible.svg";
+import palomaIcon from "../assets/pigeon.svg";
+import coraIcon from "../assets/hearth.svg";
+
+//imagenes para las cards
+import cruzCard from "../assets/cruz-sinfondo.png";
+import lavacroCard from "../assets/lavacro-sinfondo.png";
+import jarraCard from "../assets/jarra-sinfondo.png";
+import coronaCard from "../assets/corona-sinfondo.png";
 ---
 
 <Layout>
   <Header />
   <main
-    class="flex flex-col justify-center items-center bg-black w-full h-full text-white"
+    class="flex flex-col justify-center items-center bg-white text-white p-32"
   >
-    <div class="">
-      <h1 class="bg-orange-800 text-5xl font-bold flex justify-center">
-        Creencias
+    <div class="flex flex-col items-center justify-center gap-y-16">
+      <h1 class="text-[#141414] text-6xl font-extrabold">¿En qué creemos?</h1>
+      <div class="flex items-center justify-center gap-x-10">
+        <Card
+          imageImport={bibleIcon}
+          titleCard={"La Biblia"}
+          descriptionCard={"Creemos que la Biblia es la revelación autorizada de Dios a los hombres y que está completamente sin errores, inspirada únicamente por la dirección del Espíritu Santo. Por lo tanto, las Escrituras son las únicas guías confiables en cuestiones de fe y práctica."}
+        />
+        <Card
+          imageImport={blessIcon}
+          titleCard={"Dios"}
+          descriptionCard={"Creemos en la Trinidad — Tres Personas: Padre, Hijo y Espíritu Santo. Los tres son igualmente Dios, son de una sola sustancia y no tienen principio ni fin."}
+        />
+        <Card
+          imageImport={coraIcon}
+          titleCard={"Jesucristo"}
+          descriptionCard={"Creemos que Jesucristo es plenamente Dios y plenamente hombre, concebido del Espíritu Santo y nacido virgen de María. Murió en la cruz como nuestro sustituto, asumiendo sobre sí el castigo por nuestro pecado. Fue enterrado y resucitado físicamente para demostrar la integridad de Su obra, proporcionando nuestra victoria sobre el pecado y la muerte."}
+        />
+      </div>
+      <div class="flex items-center justify-center gap-x-10">
+        <Card
+          imageImport={crossIcon}
+          titleCard={"Salvación"}
+          descriptionCard={"Creemos que el hombre fue creado para disfrutar de una relación estrecha e íntima con Dios, pero que pecó y, por lo tanto, cayó bajo el juicio de Dios — físicamente en la muerte, espiritualmente en alienación de Dios. Toda la humanidad ha heredado este estado y una naturaleza pecaminosa. Por lo tanto, el remedio de Dios para la ruina del hombre es enteramente de gracia a través de la confianza personal en lo que Cristo completó para él en la cruz."}
+        />
+        <Card
+          imageImport={palomaIcon}
+          titleCard={"Regreso de Cristo"}
+          descriptionCard={"Creemos en el regreso personal de nuestro Señor Jesucristo antes del establecimiento de Su reino en la tierra. Los que son creyentes estarán para siempre en la presencia de Dios, y los que han rechazado a Cristo serán separados de Dios para siempre."}
+        />
+      </div>
+    </div>
+    <div class="mt-40 mb-24">
+      <h1 class="text-[#141414] text-6xl font-extrabold">
+        El Evangelio Cuádruple
       </h1>
-      <h2>is comming...</h2>
+    </div>
+    <a
+      target="_blank"
+      href="https://www.youtube.com/"
+      <div
+      class="parallax-section-cruz lg:w-[900px] w-full h-64 rounded-xl mb-16"
+    >
+      <div
+        class="parallax-overlay-cruz h-64 flex items-center justify-between rounded-xl p-20"
+      >
+        <div class="flex items-center justify-start">
+          <Image src={cruzCard} alt="" height={96} />
+          <div class="flex flex-col ml-5">
+            <h1 class="text-white font-bold lg:text-4xl text-2xl">La Cruz</h1>
+            <h1 class="text-white font-light lg:text-2xl text-xs">
+              Jesús Nuestro Salvador
+            </h1>
+          </div>
+        </div>
+        <button
+          class="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold"
+          >Saber más</button
+        >
+      </div>
+    </a>
+    <a
+      target="_blank"
+      href="https://www.youtube.com/"
+      <div
+      class="parallax-section-lavacro lg:w-[900px] w-full h-64 rounded-xl mb-16"
+    >
+      <div
+        class="parallax-overlay-lavacro h-64 flex items-center justify-between rounded-xl p-20"
+      >
+        <div class="flex items-center justify-start">
+          <Image src={lavacroCard} alt="" height={96} />
+          <div class="flex flex-col ml-5">
+            <h1 class="text-white font-bold lg:text-4xl text-2xl">
+              El Lavacro
+            </h1>
+            <h1 class="text-white font-light lg:text-2xl text-xs">
+              Jesús Nuestro Santificador
+            </h1>
+          </div>
+        </div>
+        <button
+          class="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold"
+          >Saber más</button
+        >
+      </div>
+    </a>
+    <a
+      target="_blank"
+      href="https://www.youtube.com/"
+      <div
+      class="parallax-section-jarra lg:w-[900px] w-full h-64 rounded-xl mb-16"
+    >
+      <div
+        class="parallax-overlay-jarra h-64 flex items-center justify-between rounded-xl p-20"
+      >
+        <div class="flex items-center justify-start">
+          <Image src={jarraCard} alt="" height={96} />
+          <div class="flex flex-col ml-5">
+            <h1 class="text-white font-bold lg:text-4xl text-2xl">La Jarra</h1>
+            <h1 class="text-white font-light lg:text-2xl text-xs">
+              Jesús Nuestro Sanador
+            </h1>
+          </div>
+        </div>
+        <button
+          class="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold"
+          >Saber más</button
+        >
+      </div>
+    </a>
+    <a
+      target="_blank"
+      href="https://www.youtube.com/"
+      <div
+      class="parallax-section-corona lg:w-[900px] w-full h-64 rounded-xl"
+    >
+      <div
+        class="parallax-overlay-corona h-64 flex items-center justify-between rounded-xl p-20"
+      >
+        <div class="flex items-center justify-start">
+          <Image src={coronaCard} alt="" height={96} />
+          <div class="flex flex-col ml-5">
+            <h1 class="text-white font-bold lg:text-4xl text-2xl">La Corona</h1>
+            <h1 class="text-white font-light lg:text-2xl text-xs">
+              Jesús Nuestro Rey Que Viene
+            </h1>
+          </div>
+        </div>
+        <button
+          class="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold"
+          >Saber más</button
+        >
+      </div>
+    </a>
+    <h1 class="text-[#141414] text-6xl font-extrabold mb-7 mt-32">
+      Nuestra Cultura
+    </h1>
+    <p class="text-[#141414] w-[450px] text-center">
+      Nuestro ADN es un conjunto de valores que hacen de Casa de Vida quiénes
+      somos. Estos valores están en el corazón de nuestra iglesia y crean
+      nuestra identidad como pueblo y organización. Estos son valores que
+      siempre han estado con nosotros y nunca cambiarán
+    </p>
+    <div class="flex flex-col items-center justify-center gap-y-16 mt-20">
+      <div class="grid grid-cols-2 gap-24 text-center">
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
+          >
+            1
+          </div>
+          <p class="mt-4 text-[#141414] font-bold text-2xl">Mano abierta</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
+          >
+            2
+          </div>
+          <p class="mt-4 text-[#141414] font-bold text-2xl">
+            Iglesia como familia
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
+          >
+            3
+          </div>
+          <p class="mt-4 text-[#141414] font-bold text-2xl w-80">
+            Enseñanza bíblica que es portátil
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
+          >
+            4
+          </div>
+          <p class="mt-4 text-[#141414] font-bold text-2xl w-80">
+            No se permiten personas perfectas
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
+          >
+            5
+          </div>
+          <p class="mt-4 text-[#141414] font-bold text-2xl w-96">
+            El ministerio es un deporte de equipo
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
+          >
+            6
+          </div>
+          <p class="mt-4 text-[#141414] font-bold text-2xl w-80">
+            El patio delantero importa
+          </p>
+        </div>
+      </div>
     </div>
   </main>
+  <Footer />
 </Layout>
+<style>
+  .parallax-section-cruz {
+    background-image: url("/src/assets/fondo-cruz.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline: 3px;
+  }
+  .parallax-overlay-cruz {
+    background: rgba(0, 0, 0, 0.713);
+  }
+
+  .parallax-section-lavacro {
+    background-image: url("/src/assets/fondo-lavacro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline: 3px;
+  }
+  .parallax-overlay-lavacro {
+    background: rgba(0, 0, 0, 0.713);
+  }
+
+  .parallax-section-jarra {
+    background-image: url("/src/assets/fondo-jarra.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline: 3px;
+  }
+  .parallax-overlay-jarra {
+    background: rgba(0, 0, 0, 0.713);
+  }
+
+  .parallax-section-corona {
+    background-image: url("/src/assets/fondo-corona.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline: 3px;
+  }
+  .parallax-overlay-corona {
+    background: rgba(0, 0, 0, 0.713);
+  }
+</style>
