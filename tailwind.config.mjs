@@ -5,6 +5,18 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      backgroundImage: {
+        cruz: "url('/src/assets/fondo-cruz.jpg')",
+        lavacro: "url('/src/assets/fondo-lavacro.jpg')",
+        jarra: "url('/src/assets/fondo-jarra.jpg')",
+        corona: "url('/src/assets/fondo-corona.jpg')",
+      },
+      backgroundColor: {
+        overlay: "rgba(0, 0, 0, 0.713)",
+      },
+      margin: {
+        inline: "3px",
+      },
       fontFamily: {
         sora: ["Sora Variable", ...defaultTheme.fontFamily.sans],
       },

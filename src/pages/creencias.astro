@@ -17,6 +17,8 @@ import cruzCard from "../assets/cruz-sinfondo.png";
 import lavacroCard from "../assets/lavacro-sinfondo.png";
 import jarraCard from "../assets/jarra-sinfondo.png";
 import coronaCard from "../assets/corona-sinfondo.png";
+
+import CreenciasForm from "../components/CreenciasForm.tsx";
 ---
 
 <Layout>
@@ -56,109 +58,7 @@ import coronaCard from "../assets/corona-sinfondo.png";
         />
       </div>
     </div>
-    <div class="mt-40 mb-24">
-      <h1 class="text-[#141414] text-6xl font-extrabold">
-        El Evangelio Cuádruple
-      </h1>
-    </div>
-    <a
-      target="_blank"
-      href="https://www.youtube.com/"
-      <div
-      class="parallax-section-cruz lg:w-[900px] w-full h-64 rounded-xl mb-16"
-    >
-      <div
-        class="parallax-overlay-cruz h-64 flex items-center justify-between rounded-xl p-20"
-      >
-        <div class="flex items-center justify-start">
-          <Image src={cruzCard} alt="" height={96} />
-          <div class="flex flex-col ml-5">
-            <h1 class="text-white font-bold lg:text-4xl text-2xl">La Cruz</h1>
-            <h1 class="text-white font-light lg:text-2xl text-xs">
-              Jesús Nuestro Salvador
-            </h1>
-          </div>
-        </div>
-        <button
-          class="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold"
-          >Saber más</button
-        >
-      </div>
-    </a>
-    <a
-      target="_blank"
-      href="https://www.youtube.com/"
-      <div
-      class="parallax-section-lavacro lg:w-[900px] w-full h-64 rounded-xl mb-16"
-    >
-      <div
-        class="parallax-overlay-lavacro h-64 flex items-center justify-between rounded-xl p-20"
-      >
-        <div class="flex items-center justify-start">
-          <Image src={lavacroCard} alt="" height={96} />
-          <div class="flex flex-col ml-5">
-            <h1 class="text-white font-bold lg:text-4xl text-2xl">
-              El Lavacro
-            </h1>
-            <h1 class="text-white font-light lg:text-2xl text-xs">
-              Jesús Nuestro Santificador
-            </h1>
-          </div>
-        </div>
-        <button
-          class="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold"
-          >Saber más</button
-        >
-      </div>
-    </a>
-    <a
-      target="_blank"
-      href="https://www.youtube.com/"
-      <div
-      class="parallax-section-jarra lg:w-[900px] w-full h-64 rounded-xl mb-16"
-    >
-      <div
-        class="parallax-overlay-jarra h-64 flex items-center justify-between rounded-xl p-20"
-      >
-        <div class="flex items-center justify-start">
-          <Image src={jarraCard} alt="" height={96} />
-          <div class="flex flex-col ml-5">
-            <h1 class="text-white font-bold lg:text-4xl text-2xl">La Jarra</h1>
-            <h1 class="text-white font-light lg:text-2xl text-xs">
-              Jesús Nuestro Sanador
-            </h1>
-          </div>
-        </div>
-        <button
-          class="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold"
-          >Saber más</button
-        >
-      </div>
-    </a>
-    <a
-      target="_blank"
-      href="https://www.youtube.com/"
-      <div
-      class="parallax-section-corona lg:w-[900px] w-full h-64 rounded-xl"
-    >
-      <div
-        class="parallax-overlay-corona h-64 flex items-center justify-between rounded-xl p-20"
-      >
-        <div class="flex items-center justify-start">
-          <Image src={coronaCard} alt="" height={96} />
-          <div class="flex flex-col ml-5">
-            <h1 class="text-white font-bold lg:text-4xl text-2xl">La Corona</h1>
-            <h1 class="text-white font-light lg:text-2xl text-xs">
-              Jesús Nuestro Rey Que Viene
-            </h1>
-          </div>
-        </div>
-        <button
-          class="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold"
-          >Saber más</button
-        >
-      </div>
-    </a>
+    <CreenciasForm client:load />
     <h1 class="text-[#141414] text-6xl font-extrabold mb-7 mt-32">
       Nuestra Cultura
     </h1>
@@ -236,50 +136,6 @@ import coronaCard from "../assets/corona-sinfondo.png";
       </div>
     </div>
   </main>
+
   <Footer />
 </Layout>
-<style>
-  .parallax-section-cruz {
-    background-image: url("/src/assets/fondo-cruz.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-inline: 3px;
-  }
-  .parallax-overlay-cruz {
-    background: rgba(0, 0, 0, 0.713);
-  }
-
-  .parallax-section-lavacro {
-    background-image: url("/src/assets/fondo-lavacro.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-inline: 3px;
-  }
-  .parallax-overlay-lavacro {
-    background: rgba(0, 0, 0, 0.713);
-  }
-
-  .parallax-section-jarra {
-    background-image: url("/src/assets/fondo-jarra.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-inline: 3px;
-  }
-  .parallax-overlay-jarra {
-    background: rgba(0, 0, 0, 0.713);
-  }
-
-  .parallax-section-corona {
-    background-image: url("/src/assets/fondo-corona.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-inline: 3px;
-  }
-  .parallax-overlay-corona {
-    background: rgba(0, 0, 0, 0.713);
-  }
-</style>
