@@ -7,58 +7,64 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <Header />
   <main>
+    <!--main-img-->
     <div class="parallax-section h-screen relative">
       <div
         class="parallax-overlay absolute inset-0 flex flex-col items-center justify-center text-white text-center text-balance xl:px-96 px-10"
       >
-        <h1 class="sm:text-7xl text-3xl font-extrabold">Visítanos</h1>
-        <button
+        <h1 class="sm:text-7xl text-5xl font-extrabold">Visítanos</h1>
+        <a
+          target="_blank"
+          href="https://www.google.com/maps?q=C.+Afueras+a+Valverde,+27,+Fuencarral-El+Pardo,+28034+Madrid&ftid=0xd422bd91d08d0e9:0x93051ea9910b0122&entry=gps&lucs=,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447,94213318&g_ep=CAISDTYuMTMxLjAuODMyMzAYACCenQoqYyw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDIwMzAxOSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0Nyw5NDIxMzMxOEICRVM%3D&g_st=iw"
           class="mt-6 px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold"
-          >Ver mapa</button
+          >Ver mapa</a
         >
       </div>
     </div>
     <div class="flex flex-col items-center justify-center p-32 gap-y-16">
-      <h1 class="text-5xl font-bold">Planifica tu vista</h1>
+      <!--primera seccion-->
+      <h1 class="text-5xl text-center font-bold">Planifica tu vista</h1>
       <div
-        class="flex flex-col items-center justify-center text-white gap-y-20"
+        class="flex flex-col items-center justify-center text-white lg:gap-y-20"
       >
-        <div class="flex gap-x-20">
+        <div class="lg:flex gap-x-20">
           <div
-            class="bg-[#0059AD] w-96 h-96 flex flex-col items-start justify-center gap-y-4 p-10 rounded-xl"
+            class="bg-[#0059AD] lg:w-96 lg:h-96 w-72 h-72 flex flex-col items-start justify-center gap-y-4 p-10 rounded-xl lg:mb-0 mb-10"
           >
-            <h2 class="text-4xl font-bold">Servicios dominicales</h2>
-            <p>
+            <h2 class="lg:text-4xl text-2xl font-bold">
+              Servicios dominicales
+            </h2>
+            <p class="text-sm">
               Tenemos servicios a las 10:30 am; ven y disfruta de cantar al
               Señor y de la predicación de su palabra.
             </p>
           </div>
           <div
-            class="bg-[#0059AD] w-96 h-96 flex flex-col items-start justify-center gap-y-4 p-10 rounded-xl"
+            class="bg-[#0059AD] lg:w-96 lg:h-96 w-72 h-72 flex flex-col items-start justify-center gap-y-4 p-10 rounded-xl lg:mb-0 mb-10"
           >
-            <h2 class="text-4xl font-bold">¿Traer a los niños?</h2>
-            <p>
+            <h2 class="lg:text-4xl text-2xl font-bold">¿Traer a los niños?</h2>
+            <p class="text-sm">
               Contamos con un ministerio a la niñez donde vas a poder dejar a
               los pequeños. Ellos van a disfrutar un día inigualable, mientras
               estas disfrutando del culto del Señor.
             </p>
           </div>
         </div>
-        <div class="flex gap-x-20">
+        <div class="lg:flex gap-x-20">
           <div
-            class="bg-[#0059AD] w-96 h-96 flex flex-col items-start justify-center gap-y-4 p-10 rounded-xl"
+            class="bg-[#0059AD] lg:w-96 lg:h-96 w-72 h-72 flex flex-col items-start justify-center gap-y-4 p-10 rounded-xl lg:mb-0 mb-10"
           >
-            <h2 class="text-4xl font-bold">Estacionamiento</h2>
-            <p>
+            <h2 class="lg:text-4xl text-2xl font-bold">Estacionamiento</h2>
+            <p class="text-sm">
               Aparcar es fácil. A los alrededores de la iglesia vas a poder
               encontrar mucho espacio de para dejar el coche.
             </p>
           </div>
           <div
-            class="bg-[#0059AD] w-96 h-96 flex flex-col items-start justify-center gap-y-4 p-10 rounded-xl"
+            class="bg-[#0059AD] lg:w-96 lg:h-96 w-72 h-72 flex flex-col items-start justify-center gap-y-4 p-10 rounded-xl"
           >
-            <h2 class="text-4xl font-bold">Cuando llegas</h2>
-            <p>
+            <h2 class="lg:text-4xl text-2xl font-bold">Cuando llegas</h2>
+            <p class="text-sm">
               Por favor acércate a uno de los líderes, estamos ansiosos de
               conocerte, pues hemos preparado un pequeño presente para ti.
             </p>
@@ -74,12 +80,12 @@ import Layout from "../layouts/Layout.astro";
           class="parallax-section-culto lg:w-[1000px] w-full h-72 rounded-xl mb-16"
         >
           <div
-            class="parallax-overlay-culto h-72 flex flex-col items-center justify-center rounded-xl"
+            class="parallax-overlay-culto h-72 scroll-px-5 flex flex-col items-center justify-center rounded-xl text-center"
           >
-            <h1 class="text-white font-bold lg:text-5xl text-2xl">
+            <h1 class="text-white font-bold lg:text-5xl text-xl">
               Culto de Iglesia
             </h1>
-            <h1 class="text-white font-normal lg:text-4xl text-2xl">
+            <h1 class="text-white font-normal lg:text-4xl text-sm">
               Domingos - 10:30 am
             </h1>
           </div>
@@ -91,12 +97,12 @@ import Layout from "../layouts/Layout.astro";
           class="parallax-section-jovenes lg:w-[1000px] w-full h-72 rounded-xl mb-16"
         >
           <div
-            class="parallax-overlay-jovenes h-72 flex flex-col items-center justify-center rounded-xl"
+            class="parallax-overlay-jovenes h-72 scroll-px-5 flex flex-col items-center justify-center rounded-xl text-center"
           >
-            <h1 class="text-white font-bold lg:text-5xl text-2xl">
+            <h1 class="text-white font-bold lg:text-5xl text-xl">
               Culto de Jóvenes
             </h1>
-            <h1 class="text-white font-normal lg:text-4xl text-2xl">
+            <h1 class="text-white font-normal lg:text-4xl text-sm">
               Sábados - 18:00 pm
             </h1>
           </div>
@@ -108,12 +114,12 @@ import Layout from "../layouts/Layout.astro";
           class="parallax-section-oracion lg:w-[1000px] w-full h-72 rounded-xl mb-16"
         >
           <div
-            class="parallax-overlay-oracion h-72 flex flex-col items-center justify-center rounded-xl"
+            class="parallax-overlay-oracion h-72 scroll-px-5 flex flex-col text-center items-center justify-center rounded-xl"
           >
-            <h1 class="text-white font-bold lg:text-5xl text-2xl">
+            <h1 class="text-white font-bold lg:text-5xl text-xl">
               Culto de Oración (virtual)
             </h1>
-            <h1 class="text-white font-normal lg:text-4xl text-2xl">
+            <h1 class="text-white font-normal lg:text-4xl text-sm">
               Miércoles - 21:00 pm
             </h1>
           </div>
@@ -125,12 +131,12 @@ import Layout from "../layouts/Layout.astro";
           class="parallax-section-escuela lg:w-[1000px] w-full h-72 rounded-xl"
         >
           <div
-            class="parallax-overlay-escuela h-72 flex flex-col items-center justify-center rounded-xl"
+            class="parallax-overlay-escuela h-72 scroll-px-5 text-center flex flex-col items-center justify-center rounded-xl"
           >
-            <h1 class="text-white font-bold lg:text-5xl text-2xl">
+            <h1 class="text-white font-bold lg:text-5xl text-xl">
               Escuela Bíblica (virtual)
             </h1>
-            <h1 class="text-white font-normal lg:text-4xl text-2xl">
+            <h1 class="text-white font-normal lg:text-4xl text-sm">
               Viernes - 21:00 pm
             </h1>
           </div>
