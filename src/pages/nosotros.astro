@@ -11,32 +11,72 @@ import Footer from "../components/Footer.astro";
 
 <Layout title="Iglesia Casa de Vida">
   <Header />
-  <main class="flex flex-col justify-center items-center p-32 gap-y-16">
-    <h1 class="text-[#141414] text-6xl font-bold">Nosotros</h1>
-    <div class="flex items-center justify-center gap-x-36">
-      <p class="w-[445px] font-normal text-xl">
-        Es un tiempo increíble para “Alianza Casa de Vida”. Sabemos que Dios nos
-        ha puesto en el lugar correcto y en el tiempo correcto con el propósito
-        de impactar positivamente a nuestra comunidad.
-      </p>
-      <Image src={iglesiaP1} alt="" class="w-[500px] rounded-xl" />
+  <main class="flex flex-col justify-center items-center p-16 gap-y-16">
+    <h1 class="text-[#141414] sm:text-6xl text-5xl font-bold">Nosotros</h1>
+
+    <!-- Sección 1 -->
+    <div
+      class="xl:flex items-center justify-center gap-x-36 relative xl:static"
+    >
+      <div
+        class="xl:flex items-center justify-center relative xl:order-2 order-1 lg:text-[#141414] text-white"
+      >
+        <p
+          class="md:w-[450px] w-[280px] font-normal md:text-xl text-[10px] text-center xl:text-left xl:static absolute xl:top-0 top-1/2 xl:left-0 left-1/2 transform xl:-translate-x-0 -translate-x-1/2 xl:-translate-y-0 -translate-y-1/2 z-10 xl:z-auto text-white xl:text-[#141414] mr-0 xl:mr-10"
+        >
+          Es un tiempo increíble para “Alianza Casa de Vida”. Sabemos que Dios
+          nos ha puesto en el lugar correcto y en el tiempo correcto con el
+          propósito de impactar positivamente a nuestra comunidad.
+        </p>
+        <div class="relative md:w-[500px] w-[300px] xl:order-2 order-1">
+          <Image src={iglesiaP1} alt="" class="rounded-xl" />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-70 rounded-xl xl:bg-transparent"
+          >
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flex items-center justify-center gap-x-36">
-      <Image src={iglesiaP2} alt="" class="w-[500px] rounded-xl" />
-      <p class="w-[445px] font-normal text-xl">
+
+    <!-- Sección 2 -->
+    <div
+      class="xl:flex items-center justify-center relative xl:order-2 order-1 lg:text-[#141414] text-white"
+    >
+      <div class="relative md:w-[500px] w-[300px] xl:order-2 order-1">
+        <Image src={iglesiaP2} alt="" class="rounded-xl" />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-70 rounded-xl xl:bg-transparent"
+        >
+        </div>
+      </div>
+      <p
+        class="md:w-[450px] w-[280px] font-normal md:text-xl text-[10px] text-sm xl:order-2 order-1 text-center xl:text-left xl:static absolute xl:top-0 top-1/2 xl:left-0 left-1/2 transform xl:-translate-x-0 -translate-x-1/2 xl:-translate-y-0 -translate-y-1/2 z-10 xl:z-auto text-white xl:text-[#141414] ml-0 xl:ml-10"
+      >
         Casa de Vida es un lugar donde todos son bienvenidos, es por esto que
         queremos invitarte, junto con tu familia para que nos visiten.
       </p>
     </div>
-    <div class="flex items-center justify-center gap-x-36">
-      <p class="w-[445px] font-normal text-xl">
+
+    <!-- Sección 3 -->
+    <div
+      class="xl:flex items-center justify-center relative xl:order-2 order-1 lg:text-[#141414] text-white"
+    >
+      <p
+        class="md:w-[450px] w-[280px] font-normal md:text-xl text-[10px] text-center xl:text-left xl:static absolute xl:top-0 top-1/2 xl:left-0 left-1/2 transform xl:-translate-x-0 -translate-x-1/2 xl:-translate-y-0 -translate-y-1/2 z-10 xl:z-auto text-white xl:text-[#141414] mr-0 xl:mr-10"
+      >
         En nuestra Iglesia los mensajes que se predican son prácticos y
         relevantes, te retarán y te ayudarán a encontrar el propósito y la
         dirección para tu vida. Los programas para nuestros estudiantes y niños
         son divertidos, y nuestros maestros están listos para ayudar y motivar a
         tus hijos en su crecimiento espiritual como seguidores de Cristo.
       </p>
-      <Image src={iglesiaP3} alt="" class="w-[500px] rounded-xl" />
+      <div class="relative md:w-[500px] w-[300px] xl:order-2 order-1">
+        <Image src={iglesiaP3} alt="" class="rounded-xl" />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-70 rounded-xl xl:bg-transparent"
+        >
+        </div>
+      </div>
     </div>
   </main>
   <Footer />
