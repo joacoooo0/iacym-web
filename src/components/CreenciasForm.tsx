@@ -44,9 +44,9 @@ export default function Creencias() {
                 </h1>
               </div>
             </div>
-            <button className="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold">
+            {/* <button className="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold">
               Saber más
-            </button>
+            </button> */}
           </div>
         </div>
       </a>
@@ -67,9 +67,9 @@ export default function Creencias() {
                 </h1>
               </div>
             </div>
-            <button className="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold">
+            {/* <button className="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold">
               Saber más
-            </button>
+            </button> */}
           </div>
         </div>
       </a>
@@ -90,9 +90,9 @@ export default function Creencias() {
                 </h1>
               </div>
             </div>
-            <button className="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold">
+            {/* <button className="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold">
               Saber más
-            </button>
+            </button> */}
           </div>
         </div>
       </a>
@@ -113,15 +113,15 @@ export default function Creencias() {
                 </h1>
               </div>
             </div>
-            <button className="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold">
+            {/* <button className="px-8 py-3 bg-[#004688] text-white rounded-2xl font-semibold">
               Saber más
-            </button>
+            </button> */}
           </div>
         </div>
       </a>
 
       {/* Modal */}
-      {isModalOpen && (
+      {/* {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="bg-white p-8 rounded-lg w-11/12 md:w-1/2 relative">
             <button
@@ -134,7 +134,7 @@ export default function Creencias() {
             <p className="mb-4 text-black">contenido {modalContent}.</p>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 }
