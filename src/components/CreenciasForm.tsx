@@ -23,7 +23,7 @@ export default function Creencias() {
   return (
     <>
       <div className="mt-40 mb-24">
-        <h1 className="text-[#141414] text-6xl font-extrabold">
+        <h1 className="text-[#141414] lg:text-6xl text-5xl text-center font-extrabold">
           El Evangelio Cuádruple
         </h1>
       </div>
@@ -31,11 +31,11 @@ export default function Creencias() {
         className="lg:w-[900px] w-full h-64 rounded-xl mb-16"
         onClick={() => openModal("La Cruz")}
       >
-        <div className="bg-cruz bg-center bg-no-repeat bg-cover m-inline h-64 rounded-xl mb-16">
-          <div className="bg-overlay h-64 flex items-center justify-between rounded-xl p-20">
-            <div className="flex items-center justify-start">
-              <img src={cruzCard.src} alt="La Cruz" className="w-24" />
-              <div className="flex flex-col ml-5">
+        <div className="bg-cruz bg-center bg-no-repeat bg-cover m-inline h-64 w-auto rounded-xl mb-16">
+          <div className="bg-overlay h-64 flex items-center lg:justify-between justify-center rounded-xl lg:p-20 p-4">
+            <div className="lg:flex items-center lg:justify-start justify-center align-middle content-center">
+              <img src={cruzCard.src} alt="La Cruz" className="lg:w-24 w-12" />
+              <div className="flex flex-col lg:ml-5 justify-center lg:items-start">
                 <h1 className="text-white font-bold lg:text-4xl text-2xl">
                   La Cruz
                 </h1>
@@ -55,10 +55,14 @@ export default function Creencias() {
         onClick={() => openModal("El Lavacro")}
       >
         <div className="bg-lavacro bg-center bg-no-repeat bg-cover m-inline h-64 rounded-xl mb-16">
-          <div className="bg-overlay h-64 flex items-center justify-between rounded-xl p-20">
-            <div className="flex items-center justify-start">
-              <img src={lavacroCard.src} alt="El Lavacro" className="w-24" />
-              <div className="flex flex-col ml-5">
+          <div className="bg-overlay h-64 flex items-center lg:justify-between justify-center rounded-xl lg:p-20 p-4">
+            <div className="lg:flex items-center lg:justify-start justify-center">
+              <img
+                src={lavacroCard.src}
+                alt="El Lavacro"
+                className="lg:w-24 w-12"
+              />
+              <div className="flex flex-col lg:ml-5 justify-center lg:items-start">
                 <h1 className="text-white font-bold lg:text-4xl text-2xl">
                   El Lavacro
                 </h1>
@@ -78,10 +82,14 @@ export default function Creencias() {
         onClick={() => openModal("La Jarra")}
       >
         <div className="bg-jarra bg-center bg-no-repeat bg-cover m-inline h-64 rounded-xl mb-16">
-          <div className="bg-overlay h-64 flex items-center justify-between rounded-xl p-20">
-            <div className="flex items-center justify-start">
-              <img src={jarraCard.src} alt="La Jarra" className="w-24" />
-              <div className="flex flex-col ml-5">
+          <div className="bg-overlay h-64 flex items-center lg:justify-between justify-center rounded-xl lg:p-20 p-4">
+            <div className="lg:flex items-center lg:justify-start justify-center">
+              <img
+                src={jarraCard.src}
+                alt="La Jarra"
+                className="lg:w-24 w-12"
+              />
+              <div className="flex flex-col lg:ml-5 justify-center lg:items-start">
                 <h1 className="text-white font-bold lg:text-4xl text-2xl">
                   La Jarra
                 </h1>
@@ -101,10 +109,14 @@ export default function Creencias() {
         onClick={() => openModal("La Corona")}
       >
         <div className="bg-corona bg-center bg-no-repeat bg-cover m-inline h-64 rounded-xl">
-          <div className="bg-overlay h-64 flex items-center justify-between rounded-xl p-20">
-            <div className="flex items-center justify-start">
-              <img src={coronaCard.src} alt="La Corona" className="w-24" />
-              <div className="flex flex-col ml-5">
+          <div className="bg-overlay h-64 flex items-center lg:justify-between justify-center rounded-xl lg:p-20 p-4">
+            <div className="lg:flex items-center lg:justify-start justify-center">
+              <img
+                src={coronaCard.src}
+                alt="La Corona"
+                className="lg:w-24 w-12"
+              />
+              <div className="flex flex-col lg:ml-5 justify-center lg:items-start">
                 <h1 className="text-white font-bold lg:text-4xl text-2xl">
                   La Corona
                 </h1>

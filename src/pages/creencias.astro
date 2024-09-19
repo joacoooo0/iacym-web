@@ -18,11 +18,15 @@ import CreenciasForm from "../components/CreenciasForm.tsx";
 <Layout>
   <Header />
   <main
-    class="flex flex-col justify-center items-center bg-white text-white p-32"
+    class="flex flex-col justify-center items-center bg-white text-white p-20"
   >
-    <div class="flex flex-col items-center justify-center gap-y-16">
-      <h1 class="text-[#141414] text-6xl font-extrabold">¿En qué creemos?</h1>
-      <div class="flex items-center justify-center gap-x-10">
+    <div class="flex flex-col items-center justify-center lg:gap-y-16">
+      <h1
+        class="text-[#141414] lg:text-6xl text-5xl text-center font-extrabold lg:mb-0 mb-16"
+      >
+        ¿En qué creemos?
+      </h1>
+      <div class="lg:flex items-center justify-center gap-x-10">
         <Card
           imageImport={bibleIcon}
           titleCard={"La Biblia"}
@@ -39,7 +43,7 @@ import CreenciasForm from "../components/CreenciasForm.tsx";
           descriptionCard={"Creemos que Jesucristo es plenamente Dios y plenamente hombre, concebido del Espíritu Santo y nacido virgen de María. Murió en la cruz como nuestro sustituto, asumiendo sobre sí el castigo por nuestro pecado. Fue enterrado y resucitado físicamente para demostrar la integridad de Su obra, proporcionando nuestra victoria sobre el pecado y la muerte."}
         />
       </div>
-      <div class="flex items-center justify-center gap-x-10">
+      <div class="lg:flex items-center justify-center gap-x-10">
         <Card
           imageImport={crossIcon}
           titleCard={"Salvación"}
@@ -53,37 +57,41 @@ import CreenciasForm from "../components/CreenciasForm.tsx";
       </div>
     </div>
     <CreenciasForm client:load />
-    <h1 class="text-[#141414] text-6xl font-extrabold mb-7 mt-32">
+    <h1
+      class="text-[#141414] lg:text-6xl text-5xl text-center font-extrabold mb-7 mt-32"
+    >
       Nuestra Cultura
     </h1>
-    <p class="text-[#141414] w-[450px] text-center">
+    <p class="text-[#141414] lg:w-[450px] w-52 text-center text-[12px]">
       Nuestro ADN es un conjunto de valores que hacen de Casa de Vida quiénes
       somos. Estos valores están en el corazón de nuestra iglesia y crean
       nuestra identidad como pueblo y organización. Estos son valores que
       siempre han estado con nosotros y nunca cambiarán
     </p>
     <div class="flex flex-col items-center justify-center gap-y-16 mt-20">
-      <div class="grid grid-cols-2 gap-24 text-center">
+      <div class="lg:grid grid-cols-2 gap-24 text-center">
         <div class="flex flex-col items-center">
           <div
             class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
           >
             1
           </div>
-          <p class="mt-4 text-[#141414] font-bold text-2xl">Mano abierta</p>
+          <p class="mt-4 text-[#141414] font-bold lg:text-2xl text-xl">
+            Mano abierta
+          </p>
           <p class="mt-4 text-[#141414] font-medium text-sm w-64">
             Nos encanta celebrar y asociarnos donde Dios está trabajando en toda
             nuestra ciudad y en todo el mundo.
           </p>
         </div>
 
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center mt-10 lg:mt-0">
           <div
             class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
           >
             2
           </div>
-          <p class="mt-4 text-[#141414] font-bold text-2xl">
+          <p class="mt-4 text-[#141414] font-bold lg:text-2xl text-xl">
             Iglesia como familia
           </p>
           <p class="mt-4 text-[#141414] font-medium text-sm w-64">
@@ -93,13 +101,15 @@ import CreenciasForm from "../components/CreenciasForm.tsx";
           </p>
         </div>
 
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center mt-10 lg:mt-0">
           <div
             class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
           >
             3
           </div>
-          <p class="mt-4 text-[#141414] font-bold text-2xl w-80">
+          <p
+            class="mt-4 text-[#141414] font-bold lg:text-2xl text-xl lg:w-80 w-auto"
+          >
             Enseñanza bíblica que es portátil
           </p>
           <p class="mt-4 text-[#141414] font-medium text-sm w-64">
@@ -109,13 +119,15 @@ import CreenciasForm from "../components/CreenciasForm.tsx";
           </p>
         </div>
 
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center mt-10 lg:mt-0">
           <div
             class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
           >
             4
           </div>
-          <p class="mt-4 text-[#141414] font-bold text-2xl w-80">
+          <p
+            class="mt-4 text-[#141414] font-bold lg:text-2xl text-xl lg:w-80 w-auto"
+          >
             No se permiten personas perfectas
           </p>
           <p class="mt-4 text-[#141414] font-medium text-sm w-64">
@@ -124,13 +136,15 @@ import CreenciasForm from "../components/CreenciasForm.tsx";
           </p>
         </div>
 
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center mt-10 lg:mt-0">
           <div
             class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
           >
             5
           </div>
-          <p class="mt-4 text-[#141414] font-bold text-2xl w-96">
+          <p
+            class="mt-4 text-[#141414] font-bold lg:text-2xl text-xl lg:w-96 w-auto"
+          >
             El ministerio es un deporte de equipo
           </p>
           <p class="mt-4 text-[#141414] font-medium text-sm w-64">
@@ -139,13 +153,15 @@ import CreenciasForm from "../components/CreenciasForm.tsx";
           </p>
         </div>
 
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center mt-10 lg:mt-0">
           <div
             class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
           >
             6
           </div>
-          <p class="mt-4 text-[#141414] font-bold text-2xl w-80">
+          <p
+            class="mt-4 text-[#141414] font-bold lg:text-2xl text-xl lg:w-80 w-auto"
+          >
             El patio delantero importa
           </p>
           <p class="mt-4 text-[#141414] font-medium text-sm w-64">
