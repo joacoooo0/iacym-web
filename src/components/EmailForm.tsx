@@ -20,8 +20,13 @@ export default function EmailForm() {
           html: `${message}`,
         }),
       });
-      const data = await res.json();
+      if (!res.ok) {
+        // Mostrar más información si la solicitud falla
+        const errorText = await res.text();
+        throw new Error(`Error ${res.status}: ${errorText}`);
+      }
 
+      const data = await res.json();
       setIsSubmitted(true); // Mostrar mensaje de confirmación después del envío
     } catch (e) {
       console.error(e);
