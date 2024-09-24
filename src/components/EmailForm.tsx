@@ -15,7 +15,7 @@ export default function EmailForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           from: "Mensaje para Casa de Vida <onboarding@resend.dev>",
-          to: ["joaco0mr4@gmail.com"],
+          to: ["informes@iacym-casadevida.com"],
           subject: `Mensaje de ${fullName} - ${email}`,
           html: `${message}`,
         }),
