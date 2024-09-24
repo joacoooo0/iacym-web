@@ -1,0 +1,177 @@
+---
+import { Image } from "astro:assets";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import Card from ".././utils/card.astro";
+
+//iconos-svg
+import blessIcon from "../assets/bless.svg";
+import crossIcon from "../assets/cross-svgrepo-com.svg";
+import bibleIcon from "../assets/bible.svg";
+import palomaIcon from "../assets/pigeon.svg";
+import coraIcon from "../assets/hearth.svg";
+
+import CreenciasForm from "../components/CreenciasForm.tsx";
+---
+
+<Layout>
+  <Header />
+  <main
+    class="flex flex-col justify-center items-center bg-white text-white p-20"
+  >
+    <div class="flex flex-col items-center justify-center lg:gap-y-16">
+      <h1
+        class="text-[#141414] lg:text-6xl text-5xl text-center font-extrabold lg:mb-0 mb-16"
+      >
+        ¿En qué creemos?
+      </h1>
+      <div class="lg:flex items-center justify-center gap-x-10">
+        <Card
+          imageImport={bibleIcon}
+          titleCard={"La Biblia"}
+          descriptionCard={"Creemos que la Biblia es la revelación autorizada de Dios a los hombres y que está completamente sin errores, inspirada únicamente por la dirección del Espíritu Santo. Por lo tanto, las Escrituras son las únicas guías confiables en cuestiones de fe y práctica."}
+        />
+        <Card
+          imageImport={blessIcon}
+          titleCard={"Dios"}
+          descriptionCard={"Creemos en la Trinidad — Tres Personas: Padre, Hijo y Espíritu Santo. Los tres son igualmente Dios, son de una sola sustancia y no tienen principio ni fin."}
+        />
+        <Card
+          imageImport={coraIcon}
+          titleCard={"Jesucristo"}
+          descriptionCard={"Creemos que Jesucristo es plenamente Dios y plenamente hombre, concebido del Espíritu Santo y nacido virgen de María. Murió en la cruz como nuestro sustituto, asumiendo sobre sí el castigo por nuestro pecado. Fue enterrado y resucitado físicamente para demostrar la integridad de Su obra, proporcionando nuestra victoria sobre el pecado y la muerte."}
+        />
+      </div>
+      <div class="lg:flex items-center justify-center gap-x-10">
+        <Card
+          imageImport={crossIcon}
+          titleCard={"Salvación"}
+          descriptionCard={"Creemos que el hombre fue creado para disfrutar de una relación estrecha e íntima con Dios, pero que pecó y, por lo tanto, cayó bajo el juicio de Dios — físicamente en la muerte, espiritualmente en alienación de Dios. Toda la humanidad ha heredado este estado y una naturaleza pecaminosa. Por lo tanto, el remedio de Dios para la ruina del hombre es enteramente de gracia a través de la confianza personal en lo que Cristo completó para él en la cruz."}
+        />
+        <Card
+          imageImport={palomaIcon}
+          titleCard={"Regreso de Cristo"}
+          descriptionCard={"Creemos en el regreso personal de nuestro Señor Jesucristo antes del establecimiento de Su reino en la tierra. Los que son creyentes estarán para siempre en la presencia de Dios, y los que han rechazado a Cristo serán separados de Dios para siempre."}
+        />
+      </div>
+    </div>
+    <CreenciasForm client:load />
+    <h1
+      class="text-[#141414] lg:text-6xl text-5xl text-center font-extrabold mb-7 mt-32"
+    >
+      Nuestra Cultura
+    </h1>
+    <p class="text-[#141414] lg:w-[450px] w-52 text-center text-[12px]">
+      Nuestro ADN es un conjunto de valores que hacen de Casa de Vida quiénes
+      somos. Estos valores están en el corazón de nuestra iglesia y crean
+      nuestra identidad como pueblo y organización. Estos son valores que
+      siempre han estado con nosotros y nunca cambiarán
+    </p>
+    <div class="flex flex-col items-center justify-center gap-y-16 mt-20">
+      <div class="lg:grid grid-cols-2 gap-24 text-center">
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
+          >
+            1
+          </div>
+          <p class="mt-4 text-[#141414] font-bold lg:text-2xl text-xl">
+            Mano abierta
+          </p>
+          <p class="mt-4 text-[#141414] font-medium text-sm w-64">
+            Nos encanta celebrar y asociarnos donde Dios está trabajando en toda
+            nuestra ciudad y en todo el mundo.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center mt-10 lg:mt-0">
+          <div
+            class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
+          >
+            2
+          </div>
+          <p class="mt-4 text-[#141414] font-bold lg:text-2xl text-xl">
+            Iglesia como familia
+          </p>
+          <p class="mt-4 text-[#141414] font-medium text-sm w-64">
+            Nos encanta ver a diferentes generaciones adorando una al lado de la
+            otra. Eso significa que todos hacemos sacrificios, pero eso es lo
+            que hace la familia.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center mt-10 lg:mt-0">
+          <div
+            class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
+          >
+            3
+          </div>
+          <p
+            class="mt-4 text-[#141414] font-bold lg:text-2xl text-xl lg:w-80 w-auto"
+          >
+            Enseñanza bíblica que es portátil
+          </p>
+          <p class="mt-4 text-[#141414] font-medium text-sm w-64">
+            Nos encanta desempacar la Biblia de una manera clara para que
+            podamos entenderla, aplicarla y llevarla con nosotros a donde quiera
+            que vayamos.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center mt-10 lg:mt-0">
+          <div
+            class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
+          >
+            4
+          </div>
+          <p
+            class="mt-4 text-[#141414] font-bold lg:text-2xl text-xl lg:w-80 w-auto"
+          >
+            No se permiten personas perfectas
+          </p>
+          <p class="mt-4 text-[#141414] font-medium text-sm w-64">
+            Nos encanta ser una familia donde es seguro compartir la verdad real
+            sobre nosotros mismos y perseguir a Jesús juntos.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center mt-10 lg:mt-0">
+          <div
+            class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
+          >
+            5
+          </div>
+          <p
+            class="mt-4 text-[#141414] font-bold lg:text-2xl text-xl lg:w-96 w-auto"
+          >
+            El ministerio es un deporte de equipo
+          </p>
+          <p class="mt-4 text-[#141414] font-medium text-sm w-64">
+            Nos encanta desarrollarnos y desafiarnos unos a otro para participar
+            en lo que Dios está haciendo dondequiera que estemos.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center mt-10 lg:mt-0">
+          <div
+            class="bg-[#0057b7] text-white rounded-full w-32 h-32 flex items-center justify-center text-4xl font-bold"
+          >
+            6
+          </div>
+          <p
+            class="mt-4 text-[#141414] font-bold lg:text-2xl text-xl lg:w-80 w-auto"
+          >
+            El patio delantero importa
+          </p>
+          <p class="mt-4 text-[#141414] font-medium text-sm w-64">
+            Tomamos “Amar a tu vecino” literalmente. No creemos que sea un
+            accidente que vivamos donde vivimos y tratamos de amar así.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

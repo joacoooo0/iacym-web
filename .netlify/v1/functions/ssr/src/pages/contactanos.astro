@@ -1,0 +1,55 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+
+import emailIcon from "../assets/email-contact.svg";
+import { Image } from "astro:assets";
+import Footer from "../components/Footer.astro";
+import EmailForm from "../components/EmailForm";
+---
+
+<Layout>
+  <Header />
+  <main class="bg-white flex items-center justify-center py-44 px-10">
+    <div class="md:flex items-center justify-center gap-x-20">
+      <div class="w-auto flex flex-col px-3">
+        <div class="mb-5">
+          <Image src={emailIcon} alt="email-icon" class="w-14" />
+          <h1 class="text-3xl font-extrabold text-[#141414] mt-5">
+            Contáctanos
+          </h1>
+        </div>
+
+        <div>
+          <EmailForm client:load />
+        </div>
+      </div>
+      <div class="font-medium flex flex-col items-start w-full md:pt-0 pt-16">
+        <div class="font-medium flex flex-col items-start w-80">
+          <div class="relative pl-4">
+            <!-- Borde redondeado -->
+            <div
+              class="absolute left-0 top-0 h-full w-1.5 bg-[#0059AD] rounded-lg"
+            >
+            </div>
+            <div class="pl-4">
+              <p class="text-[#141414] md:text-[16px] text-[14px]">
+                "Muchas gracias por contactarnos. Es nuestro deseo servirte de
+                la mejor manera que podamos. Pronto estaremos en contacto
+                contigo. Si tienes tiempo visita nuestro sitio si quieres saber
+                mas acerca de nosotros"
+              </p>
+              <p
+                class="text-[#141414] md:text-[16px] text-[14px] mt-4 font-bold"
+              >
+                Secr. Mishel
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

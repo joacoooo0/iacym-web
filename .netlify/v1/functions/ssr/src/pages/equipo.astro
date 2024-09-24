@@ -1,0 +1,135 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import userIcon from "../assets/user-example.jpg";
+import { Image } from "astro:assets";
+import Footer from "../components/Footer.astro";
+
+//equipo-fotos
+import pastores from "../assets/angelo-aida.jpg";
+import andrea_aridane from "../assets/andrea-aridane.jpg";
+import fabian from "../assets/fabian.jpg";
+import jenell from "../assets/jenell.jpg";
+import mishel from "../assets/mishel.jpg";
+import hans_ludy from "../assets/hans-ludy.jpg";
+import yonogy_yris from "../assets/yonogy-yris.jpg";
+import andrea_curi from "../assets/andrea-curi.jpg";
+---
+
+<Layout>
+  <Header />
+  <main
+    class="flex flex-col justify-center items-center bg-white text-white py-20"
+  >
+    <div>
+      <div
+        class="text-[#141414] md:flex items-center md:justify-center gap-x-10"
+      >
+        <div class="flex items-center justify-center">
+          <Image
+            src={pastores}
+            alt="user-icon"
+            class="lg:w-[440px] w-[250px] rounded-2xl"
+          />
+        </div>
+        <section class="text-center md:text-start">
+          <h1 class="lg:text-7xl text-3xl font-bold mt-6 md:mt-0">
+            Angelo y Aida
+          </h1>
+          <h3 class="lg:text-[18px] text-[13px] lg:mt-6 mt-3 italic">
+            Pastores fundadores
+          </h3>
+          <div class="flex items-center justify-center lg:w-[500px] w-[300px]">
+            <p class="lg:mt-4 mt-2 lg:text-[16px] text-[12px] text-[#141414]">
+              Angelo es originario de Perú, vino a España a la edad de los 15
+              años. Estudió Administración y Dirección Empresarial, tambien
+              estudio su licenciatura en Teología (SEFOVAN), ha culminado el
+              Máster en Teología (Dallas Theological Seminary) y actualmente se
+              encuentra cursando el Doctorado en Ministerio. Ellos tienen a una
+              hija de 1 año y juntos sirven al Señor a tiempo y fuera de tiempo.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="inline-flex items-center justify-center w-full py-16">
+      <hr class="w-[500px] h-px bg-gray-200 border-0 dark:bg-gray-700" />
+      <span
+        class="absolute px-3 font-extrabold text-[#141414] -translate-x-1/2 left-1/2 bg-white text-3xl"
+        >EQUIPO</span
+      >
+    </div>
+    <div class="grid align-middle">
+      <!-- Ajuste de clases para el grid -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 content-stretch place-items-center"
+      >
+        <div
+          class="lg:w-[300px] w-[200px] h-full flex flex-col items-center justify-center text-[#141414]"
+        >
+          <Image src={fabian} alt="user-icon-team" class="rounded-2xl" />
+          <h1 class="text-sm font-bold pt-3 text-center">
+            Líder de Jóvenes y Adoración
+          </h1>
+          <h3>Fabian</h3>
+        </div>
+        <div
+          class="lg:w-[300px] w-[200px] h-full flex flex-col items-center justify-center text-[#141414]"
+        >
+          <Image src={mishel} alt="user-icon-team" class="rounded-2xl" />
+          <h1 class="text-sm font-bold pt-3 text-center">
+            Líder de Jóvenes y Secretaria de la iglesia
+          </h1>
+          <h3>Mishel</h3>
+        </div>
+        <div
+          class="lg:w-[300px] w-[200px] h-full flex flex-col items-center justify-center text-[#141414]"
+        >
+          <Image src={yonogy_yris} alt="user-icon-team" class="rounded-2xl" />
+          <h1 class="text-sm font-bold pt-3 text-center">
+            Ministerio a la niñez y Coordinación
+          </h1>
+          <h3>Yonogy e Iris</h3>
+        </div>
+        <div
+          class="lg:w-[300px] w-[200px] h-full flex flex-col items-center justify-center text-[#141414]"
+        >
+          <Image
+            src={andrea_aridane}
+            alt="user-icon-team"
+            class="rounded-2xl"
+          />
+          <h1 class="text-sm font-bold pt-3 text-center">
+            Líderes de Evangelismo y Misiones
+          </h1>
+          <h3>Andrea y Aridane</h3>
+        </div>
+        <div
+          class="lg:w-[300px] w-[200px] h-full flex flex-col items-center justify-center text-[#141414]"
+        >
+          <Image src={hans_ludy} alt="user-icon-team" class="rounded-2xl" />
+          <h1 class="text-sm font-bold pt-3 text-center">
+            Ancianos de la iglesia
+          </h1>
+          <h3>Hans y Lucy</h3>
+        </div>
+        <div
+          class="lg:w-[300px] w-[200px] h-full flex flex-col items-center justify-center text-[#141414]"
+        >
+          <Image src={jenell} alt="user-icon-team" class="rounded-2xl" />
+          <h1 class="text-sm font-bold pt-3 text-center">Audiovisuales</h1>
+          <h3>Jenell</h3>
+        </div>
+        <div
+          class="lg:w-[300px] w-[200px] h-full flex flex-col items-center justify-center text-[#141414]"
+        >
+          <Image src={andrea_curi} alt="user-icon-team" class="rounded-2xl" />
+          <h1 class="text-sm font-bold pt-3 text-center">Audiovisuales</h1>
+          <h3>Andrea</h3>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
