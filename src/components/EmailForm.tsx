@@ -15,18 +15,14 @@ export default function EmailForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           from: "Mensaje para Casa de Vida <onboarding@resend.dev>",
-          to: ["informes@iacym-casadevida.com"],
+          to: ["joaco0mr4@gmail.com"],
           subject: `Mensaje de ${fullName} - ${email}`,
           html: `${message}`,
         }),
       });
-      if (!res.ok) {
-        // Mostrar más información si la solicitud falla
-        const errorText = await res.text();
-        throw new Error(`Error ${res.status}: ${errorText}`);
-      }
 
       const data = await res.json();
+      console.log(data);
       setIsSubmitted(true); // Mostrar mensaje de confirmación después del envío
     } catch (e) {
       console.error(e);
