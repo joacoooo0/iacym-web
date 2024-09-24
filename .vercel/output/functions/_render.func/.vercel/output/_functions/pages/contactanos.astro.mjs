@@ -33,16 +33,13 @@ function EmailForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           from: "Mensaje para Casa de Vida <onboarding@resend.dev>",
-          to: ["informes@iacym-casadevida.com"],
+          to: ["joaco0mr4@gmail.com"],
           subject: `Mensaje de ${fullName} - ${email}`,
           html: `${message}`
         })
       });
-      if (!res.ok) {
-        const errorText = await res.text();
-        throw new Error(`Error ${res.status}: ${errorText}`);
-      }
       const data = await res.json();
+      console.log(data);
       setIsSubmitted(true);
     } catch (e2) {
       console.error(e2);

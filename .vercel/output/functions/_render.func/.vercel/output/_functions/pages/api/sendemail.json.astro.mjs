@@ -1,7 +1,7 @@
 import { Resend } from 'resend';
 export { renderers } from '../../renderers.mjs';
 
-const resend = new Resend("re_GhJVTLvb_8SLGNVtMpctaGQ7v2a2nVKZt");
+const resend = new Resend("re_EE9Z4atL_2m6VDQoXLArfC62qmsL2YDCe");
 const POST = async ({ params, request }) => {
   const body = await request.json();
   const { to, from, html, subject } = body;
